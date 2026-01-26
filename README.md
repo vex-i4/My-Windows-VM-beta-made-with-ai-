@@ -1,3 +1,5 @@
+![IMG_0491](https://github.com/user-attachments/assets/e8599859-de03-445e-b7b4-77740cd831d2)
+![IMG_0490](https://github.com/user-attachments/assets/61361435-f4d5-42e1-b025-0044be46f4ab)
 Text me on discord at: Enko_WZ
 If something goes wrong!
 This creates your Ubuntu screen. Paste this first:

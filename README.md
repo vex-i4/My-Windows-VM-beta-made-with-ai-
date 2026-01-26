@@ -1,6 +1,10 @@
 Text me on discord at: Enko_WZ
 If something goes wrong!
 This creates your Ubuntu screen. Paste this first:
+if the desktop start command says
+Error response from Daemon manifest unkown run:
+
+docker run -d --name=webtop -p 3000:3000 linuxserver/webtop:latest
 
 Bash
 docker run -d --name=webtop -p 3000:3000 ghcr.io/linuxserver/webtop:ubuntu-xfce-jammy

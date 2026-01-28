@@ -1,35 +1,51 @@
-![IMG_0491](https://github.com/user-attachments/assets/e8599859-de03-445e-b7b4-77740cd831d2)
-![IMG_0490](https://github.com/user-attachments/assets/61361435-f4d5-42e1-b025-0044be46f4ab)
-Text me on discord at: Enko_WZ
-If something goes wrong!
-This creates your Ubuntu screen. Paste this first:
-if the desktop start command says
-Error response from Daemon manifest unkown run:
+# 🕹️ My Cloud Desktop & Steam
 
-docker run -d --name=webtop -p 3000:3000 linuxserver/webtop:latest
+This repo lets you run a full Linux Desktop in your browser so you can use Steam on an iPad, Quest 2, or phone. **No PC needed!**
 
-Bash
-docker run -d --name=webtop -p 3000:3000 ghcr.io/linuxserver/webtop:ubuntu-xfce-jammy
-desktop!)
+## 🚀 How to Start
 
-🛠️ STEP 2: Prepare for Steam
+1. Open the **Terminal** in your GitHub Codespace.
+2. Paste this command to start the desktop:
+```bash
+docker run -d --name=webtop -p 3000:3000 linuxserver/webtop:amd64-ubuntu-mate
 
-Inside the Desktop terminal (the one on port 3000), paste these to set everything up:
+```
 
-Enable 32-bit: sudo dpkg --add-architecture i386 && sudo apt update
-Add the App Store: sudo add-apt-repository universe && sudo apt update
-STEP 3: Install Steam
 
-Now, run the actual installation:
+3. Go to the **Ports** tab, find **3000**, change it to **Public**, and click the link.
+
+## 🛠️ How to Install Steam
+
+Once you are inside the desktop, open the **Terminal icon** and run these 3 steps:
+
+**Step 1: Unlock the tools**
+
+```bash
+sudo apt update && sudo apt install software-properties-common -y
+
+```
+
+**Step 2: Install Steam**
+
+```bash
 sudo apt install steam -y
-IF IT FAILS (Emergency Fixes)
 
-If the step above didn't work, use these "Force" commands:
-Fix broken files
-sudo apt-get install -f -y
-Download Steam directly:
-wget https://repo.steampowered.com/steam/archive/precise/steam_latest.deb && sudo apt install ./steam_latest.deb -y
+```
 
-Open Steam
-To make the Steam window pop up on your screen:
-steam -vgui &
+**Step 3: Open Steam (Best for Browsers)**
+
+```bash
+steam -vgui
+
+```
+
+## 💡 Tips
+
+* **Keyboard:** If you are on an iPad, use the side menu arrow to find the "On-Screen Keyboard."
+* **Permission Denied?** If a file won't open, type `chmod +x filename`.
+
+---
+
+### 💬 Support
+
+**Add me on discord at Enko_WZ** if you have questions!
